@@ -1,0 +1,227 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Sticky header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+#header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+#header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#header nav ul li {
+    margin-right: 1rem;
+}
+
+#header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#header nav ul li a:hover {
+    color: #000;
+}
+
+#header h1 {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #444;
+}
+
+#header button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#header button:hover {
+    background-color: #444;
+}
+
+/* Section styles */
+section {
+    padding: 4rem 2rem;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #444;
+}
+
+section p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Key Features and Benefits styles */
+#key-features {
+    background-color: #f9f9f9;
+}
+
+#key-features ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    padding-top: 2rem;
+}
+
+#key-features ul li {
+    text-align: center;
+}
+
+#key-features ul li h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+#key-features ul li p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Pricing section styles */
+#pricing {
+    background-color: #f9f9f9;
+}
+
+#pricing button {
+    display: block;
+    margin: 2rem auto 0;
+}
+
+/* Contact Us section styles */
+#contact-us form {
+    display: grid;
+    grid-gap: 1
+    rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact-us label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+#contact-us input[type="text"],
+#contact-us input[type="email"],
+#contact-us textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+#contact-us textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f9f9f9;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #header h1 {
+        font-size: 2rem;
+    }
+
+    #key-features ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    #header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 3rem 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    #key-features ul li h3 {
+        font-size: 1.2rem;
+    }
+}
